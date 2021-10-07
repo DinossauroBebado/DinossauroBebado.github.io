@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Moedas D&D</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/D&DExchange.css">
+  </head>
+  <body>
+    <section>
+      <div>
+        <img id="dnd" src="https://upload.wikimedia.org/wikipedia/en/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg">
+      </div>
+    </section>
+    <section class="role">
+      <div id="Subtitle">
+        <h2>Conversor de Moedas</h2>
+      </div>
+      <div class="locaisInfo">
+        <div id="dePara">
+          <label>De:</label><br>
+        </div>
+        <select class="escolhas" id="p1">
+          <option selected disabled value="">Selecione</option>
+          <option id="cobre1">Cobre</option>
+          <option id="prata1">Prata</option>
+          <option id="electrum1">Electrum</option>
+          <option id="ouro1">Ouro</option>
+          <option id="platina1">Platina</option>
+        </select>
+        <input class="escolhas" type="text" placeholder="Digite aqui" id="valor">
+      </div>
+      <div class="locaisInfo">
+        <div id="dePara">
+          <label>Para:</label><br>
+        </div>
+        <select class="escolhas" id="p2">
+          <option selected disabled value="">Selecione</option>
+          <option id="cobre2">Cobre</option>
+          <option id="prata2">Prata</option>
+          <option id="electrum2">Electrum</option>
+          <option id="ouro2">Ouro</option>
+          <option id="platina2">Platina</option>
+        </select>
+        <input class="escolhas" type="number" id="vemPraCa" value="" disabled>
+      </div>
+      <div>
+        <button onclick="Calcular()">CALCULAR</button>
+      </div>
+    </section>
+    <div id="resultado"></div>
+
+   <script src="JS/D&DExchange.js"></script>
+    </body>
+        </html>
